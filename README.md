@@ -1,12 +1,10 @@
 ---
-title: "Module 19 Challenge"
+title: "Cryptocurrency Clustering Analysis"
 ---
 
-<div id="bootcamp"><img style="display: none;" src="https://static.bc-edx.com/data/dl-1-2/m19/lms/img/banner.jpg" alt="lesson banner" />
+Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
 
-In this challenge, you’ll use your knowledge of Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
-
-### Before You Begin
+### Begining
 
 1. Create a new repository for this project called `CryptoClustering`. **Do not add this homework to an existing repository**.
 
