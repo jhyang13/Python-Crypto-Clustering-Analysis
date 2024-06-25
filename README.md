@@ -8,7 +8,7 @@ Python and unsupervised learning to predict if cryptocurrencies are affected by 
 
 1. Create a new repository for this project called `CryptoClustering`.
 
-2. Clone the new repository to your computer.
+2. Clone the new repository to the computer.
 
 3. Push the changes to GitHub.
 
@@ -39,7 +39,7 @@ Use the elbow method to find the best value for `k` using the following steps:
 * Create a `for` loop to compute the inertia with each possible value of `k`.
 * Create a dictionary with the data to plot the elbow curve.
 * Plot a line chart with all the inertia values computed with the different values of `k` to visually identify the optimal value for `k`.
-* Answer the following question in your notebook: What is the best value for `k`?
+* Answer the following question in the notebook: What is the best value for `k`?
 
 #### Cluster Cryptocurrencies with K-means Using the Original Scaled Data
 
@@ -58,7 +58,7 @@ Use the following steps to cluster the cryptocurrencies for the best value for `
 
 * Using the original scaled DataFrame, perform a PCA and reduce the features to three principal components.
 
-* Retrieve the explained variance to determine how much information can be attributed to each principal component and then answer the following question in your notebook:
+* Retrieve the explained variance to determine how much information can be attributed to each principal component and then answer the following question in the notebook:
     * What is the total explained variance of the three principal components?
 
 * Create a new DataFrame with the PCA data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
@@ -77,7 +77,7 @@ Use the elbow method on the PCA data to find the best value for `k` using the fo
 * Create a `for` loop to compute the inertia with each possible value of `k`.
 * Create a dictionary with the data to plot the Elbow curve.
 * Plot a line chart with all the inertia values computed with the different values of `k` to visually identify the optimal value for `k`.
-* Answer the following question in your notebook:
+* Answer the following question in the notebook:
     * What is the best value for `k` when using the PCA data?
     * Does it differ from the best k value found using the original data?
 
@@ -96,5 +96,3 @@ Use the following steps to cluster the cryptocurrencies for the best value for `
     * Add the "coin_id" column in the `hover_cols` parameter to identify the cryptocurrency represented by each data point.
 * Answer the following question:
     * What is the impact of using fewer features to cluster the data using K-Means?
-
-> **Rewind** Recall that you learned how to create composite plots in a previous module. If you need a refresher on how to create these plots, review that module. You can also check [Composing Plots](https://holoviz.org/tutorial/Composing_Plots.html) in the hvPlot documentation.
