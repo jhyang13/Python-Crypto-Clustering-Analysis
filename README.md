@@ -4,19 +4,13 @@ title: "Cryptocurrency Clustering Analysis"
 
 Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes.
 
-### Begining
+### Beginning
 
-1. Create a new repository for this project called `CryptoClustering`. **Do not add this homework to an existing repository**.
+1. Create a new repository for this project called `CryptoClustering`.
 
 2. Clone the new repository to your computer.
 
 3. Push your changes to GitHub.
-
-### Files
-
-Download the following files to help you get started:
-
-[Module 19 Challenge files](https://static.bc-edx.com/data/dl-1-2/m19/lms/starter/Starter_Code.zip)
 
 ### Instructions
 
@@ -104,139 +98,6 @@ Use the following steps to cluster the cryptocurrencies for the best value for `
     * What is the impact of using fewer features to cluster the data using K-Means?
 
 > **Rewind** Recall that you learned how to create composite plots in a previous module. If you need a refresher on how to create these plots, review that module. You can also check [Composing Plots](https://holoviz.org/tutorial/Composing_Plots.html) in the hvPlot documentation.
-
-### Requirements
-
-#### Find the Best Value for k by Using the Original Data (15 points)
-
-To receive all points, you must:
-
-* Code the elbow method algorithm to find the best value for k. Use a range from 1 to 11. (5 points)
-
-* To visually identify the optimal value for k, plot a line chart of all the inertia values computed with the different values of k. (5 points)
-
-* Answer the following question: What’s the best value for k? (5 points)
-
-#### Cluster the Cryptocurrencies with K-Means by Using the Original Data (10 points)
-
-To receive all points, you must:
-
-* Initialize the K-means model with four clusters by using the best value for k. (1 point)
-
-* Fit the K-means model by using the original data. (1 point)
-
-* Predict the clusters for grouping the cryptocurrencies by using the original data. Review the resulting array of cluster values. (3 points)
-
-* Create a copy of the original data, and then add a new column of the predicted clusters. (1 point)
-
-* Using hvPlot, create a scatter plot by setting `x="price_change_percentage_24h"` and `y="price_change_percentage_7d"`. Color the graph points with the labels that you found by using K-means. Then add the crypto name to the `hover_cols` parameter to identify the cryptocurrency that each data point represents. (4 points)
-
-#### Optimize the Clusters with Principal Component Analysis (10 points)
-
-To receive all points, you must:
-
-* Create a PCA model instance, and set `n_components=3`. (1 point)
-
-* Use the PCA model to reduce the features to three principal components. Then review the first five rows of the DataFrame. (2 points)
-
-* Get the explained variance to determine how much information can be attributed to each principal component. (2 points)
-
-* Answer the following question: What’s the total explained variance of the three principal components? (3 points)
-
-* Create a new DataFrame with the PCA data. Be sure to set the `coin_id` index from the original DataFrame as the index for the new DataFrame. Review the resulting DataFrame. (2 points)
-
-#### Find the Best Value for k by Using the PCA Data (10 points)
-
-To receive all points, you must:
-
-* Code the elbow method algorithm, and use the PCA data to find the best value for k. Use a range from 1 to 11. (2 points)
-
-* To visually identify the optimal value for k, plot a line chart of all the inertia values computed with the different values of k. (5 points)
-
-* Answer the following questions: What’s the best value for k when using the PCA data? Does it differ from the best value for k that you found by using the original data? (3 points)
-
-#### Cluster the Cryptocurrencies with K-means by Using the PCA Data (10 points)
-
-To receive all points, you must:
-
-* Initialize the K-means model with four clusters by using the best value for k. (1 point)
-
-* Fit the K-means model by using the PCA data. (1 point)
-
-* Predict the clusters for grouping the cryptocurrencies by using the PCA data. Review the resulting array of cluster values. (3 points)
-
-* Create a copy of the DataFrame with the PCA data, and then add a new column to store the predicted clusters. (1 point)
-
-* Using hvPlot, create a scatter plot by setting `x="PC1"` and `y="PC2"`. Color the graph points with the labels that you found by using K-means. Then add the crypto name to the `hover_cols` parameter to identify the cryptocurrency that each data point represents. (4 points)
-
-#### Visualize and Compare the Results (15 points)
-
-To receive all points, you must:
-
-* Create a composite plot by using hvPlot and the plus sign (`+`) operator to compare the elbow curve that you created from the original data with the one that you created from the PCA data. (5 points)
-
-* Create a composite plot by using hvPlot and the plus (`+`) operator to compare the cryptocurrency clusters that resulted from using the original data with those that resulted from the PCA data. (5 points)
-
-* Answer the following question: Based on visually analyzing the cluster analysis results, what’s the impact of using fewer features to cluster the data by using K-means? (5 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-To receive all points, you must:
-
-* Place imports at the top of the file, just after any module comments and docstrings, and before module globals and constants. (3 points)
-
-* Name functions and variables with lowercase characters, with words separated by underscores. (2 points)
-
-* Follow DRY (Don't Repeat Yourself) principles, creating maintainable and reusable code. (3 points)
-
-* Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local machine and that contains your files. (4 points)
-
-* Use the command line to add your files to the repository. (3 points)
-
-* Include appropriate commit messages in your files. (3 points)
-
-#### Code Comments (10 points)
-
-To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
-
-### Grading
-
-This project will be evaluated against the requirements and assigned a grade according to the following table:
-
-| Grade | Points |
-| --- | --- |
-| A (+/-) | 90+ |
-| B (+/-) | 80&ndash;89 |
-| C (+/-) | 70&ndash;79 |
-| D (+/-) | 60&ndash;69 |
-| F (+/-) | < 60 |
-
-### Submission
-
-Each student is required to submit the URL of your GitHub repository for grading.
-
-> **Note:** Projects are requirements for graduation. While you are allowed to miss up to two Challenge assignments and still earn your certificate, projects cannot be skipped.
-
-
-> **Important:** **It is your responsibility to include a note in the README section of your repo specifying code source and its location within your repo**. This applies if you have worked with a peer on an assignment, used code in which you did not author or create sourced from a forum such as Stack Overflow, or you received code outside curriculum content from support staff such as an Instructor, TA, Tutor, or Learning Assistant. This will provide visibility to grading staff of your circumstance in order to avoid flagging your work as plagiarized.
->
-> If you are struggling with a Challenge or any aspect of the curriculum, please remember that there are student support services available for you:
->
-> 1. Office hours facilitated by your TA(s)
->
-> 2. Tutor sessions ([sign up](https://tinyurl.com/BootCampTutorTeam))
->
-> 3. Ask the class Slack channel/get peer support
->
-> 4. AskBCS Learning Assistants
 
 ### References
 
